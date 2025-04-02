@@ -6,5 +6,7 @@
                 age:23,
             };
             console.log(5+6,name);
-            //document.getElementById("demo").innerHTML="Name is: " +name;
-            //document.getElementById("details").innerHTML="Age is: " +details.age;
+            document.getElementById("demo").innerHTML="Name is: " +name;
+            document.getElementById("details").innerHTML="Age is: " +details.age;
+            const collection =document.getElementsByClassName("demo1");
+            collection[0].innerHTML="array element: "+array;
