@@ -5,28 +5,33 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <style>
+            .bg{
+            background-color:rgb(163, 156, 162);
+            }
+        </style>
     </head>
-    <body class="d-flex justify-content-center algin-item-center vh-100">
-        <div class="card p-5 h-75 w-auto mt-5 border-primary rounded-4 shadow-lg">
+    <body class="d-flex justify-content-center algin-item-center vh-100 bg-dark">
+        <div class="card p-5 h-75 w-auto mt-5 border-primary rounded-4 shadow-lg bg">
             <table>
                <tr>
-                <th>Name:</th>
-                <td><input type="text" id="demo" value="Merson" class="rounded-3 mb-2 ms-2"></td>
+                <th class="text-white">Name</th>
+                <td><input type="text" id="demo" value="Merson" class="rounded-3 mb-2 mt-3 ms-2"></td>
                </tr>
                <tr>
-                <th>Email:</th>
+                <th class="text-white">Email</th>
                 <td><input type="text" id="demo1" value="mummu17@gmail.com" class="rounded-3 mb-2 ms-2"></td>
                </tr>
                <tr>
-                <th>Password:</th>
+                <th class="text-white">Password</th>
                 <td><input type="Password" class="rounded-3 mb-2 ms-2"></td>
                </tr>
                <tr>
-                <th>Date of Birth</th>
-                <td><input type="date" class="rounded-3 mb-2 ms-2"></td>
+                <th class="text-white">Date of Birth</th>
+                <td><input type="date" id="dob"  value=2001-06-17 class="rounded-3 mb-2 ms-2"></td>
                </tr>
                <tr>
-                <th>qualification:</th>
+                <th class="text-white">Qualification</th>
                 <td><select id="demo2" class="rounded-3 mb-2 ms-2"><option>
                     B.tech
                     </option>
@@ -38,7 +43,7 @@
                     </option></select></td>
                </tr>
                <tr>
-                <th>Branch</th>
+                <th class="text-white">Branch</th>
                 <td><select id="demo3" class="rounded-3 mb-2 ms-2">
                     <option>
                         CSE
@@ -64,23 +69,23 @@
                 </select></td>
                </tr>
                <tr>
-                <th>Gender</th><td><input type="radio" name="gender" class="ms-2" id="demo4" />Male
+                <th class="text-white">Gender</th><td><input type="radio" name="gender" class="ms-2" id="demo4" />Male
                     <input type="radio" name="gender" class="mb-2">Female</td>
                </tr>
                <tr>
-                <th>Language</th>
+                <th class="text-white">Language</th>
                 <td><input type="checkbox" name="language" class="ms-2" id="demo5">Telugu
                 <input type="checkbox" name="c">English
                 <input type="checkbox" name="c">Hindi
                 <input type="checkbox" name="c"class="mb-2">Karnataka</td>
                </tr>
                <tr>
-                <th>Mobile NO</th>
+                <th class="text-white">Mobile No</th>
                 <td><input type="number" id="demo6" value="1234567890" class="rounded-3 mb-2 ms-2"></td>
                </tr>
                <tr>
                 <th></th>
-                <td><button class="rounded-3 mb-2 ms-2 bg-primary" type="buton" onclick="Submit()">Submit</button>
+                <td><button class="rounded-3 mb-2 ms-2 bg-success" type="buton" onclick="Submit()">Submit</button>
                     <button class="rounded-3 mb-2 ms-2 bg-primary">Clear</button>
                     </td>
                </tr>
